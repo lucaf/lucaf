@@ -14,14 +14,14 @@ HDRS  = {"Authorization": f"bearer {TOKEN}",
          "Accept": "application/vnd.github+json",
          "User-Agent": "profile-readme"}
 
-def rest(path, retries=6):
+def rest(path, retries=12):
     """GET with 202 handling: GitHub computes contributor stats asynchronously."""
     for attempt in range(retries):
         req = urllib.request.Request("https://api.github.com" + path, headers=HDRS)
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 if r.status == 202:
-                    time.sleep(2 + attempt * 2)
+                    time.sleep(min(2 + attempt * 2, 15))
                     continue
                 return r.status, json.load(r)
         except urllib.error.HTTPError as e:
