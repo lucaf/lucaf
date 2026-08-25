@@ -4,7 +4,7 @@
 
 <img align="right" src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/github-stats.svg" alt="GitHub statistics">
 
-<h3>Backend engineer</h3>
+<h3>Peripatetic backend engineer</h3>
 
 <p>Twenty-five years in Go, Python, C and C++</p>
 
