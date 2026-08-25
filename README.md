@@ -1,4 +1,4 @@
-<h1>Luca Filippin</h1>
+<h1 align="center">Luca Filippin</h1>
 
 <table width="100%">
 <tr>
@@ -18,8 +18,6 @@
 </td>
 </tr>
 </table>
-
----
 
 Most of my work has gone into distributed systems and backend services: job
 schedulers running across six operating systems, REST APIs on Kubernetes,
