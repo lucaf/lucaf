@@ -1,7 +1,7 @@
 <h1 align="center">Luca Filippin</h1>
 
 <p align="center">
-  <b>Backend engineer</b> &nbsp;·&nbsp; Paris<br>
+  <b>Backend engineer</b><br>
   <sub>Twenty-five years in Go, Python, C and C++</sub>
 </p>
 
@@ -23,19 +23,9 @@ large codebases, driving multi-step refactors, catching defects before review.
 
 ### Toolbox
 
-<img src="https://img.shields.io/badge/Go-24292f?style=flat-square&logo=go&logoColor=white" alt="Go">
-<img src="https://img.shields.io/badge/Python-24292f?style=flat-square&logo=python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/C-24292f?style=flat-square&logo=c&logoColor=white" alt="C">
-<img src="https://img.shields.io/badge/C++-24292f?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
-<br>
-<img src="https://img.shields.io/badge/Kubernetes-30363d?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
-<img src="https://img.shields.io/badge/Docker-30363d?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/Helm-30363d?style=flat-square&logo=helm&logoColor=white" alt="Helm">
-<img src="https://img.shields.io/badge/Jenkins-30363d?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins">
-<br>
-<img src="https://img.shields.io/badge/Prometheus-424a53?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
-<img src="https://img.shields.io/badge/Grafana-424a53?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
-<img src="https://img.shields.io/badge/PostgreSQL-424a53?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+<p><img src="https://img.shields.io/badge/Go-24292f?style=flat-square&logo=go&logoColor=white" alt="Go"> <img src="https://img.shields.io/badge/Python-24292f?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/C-24292f?style=flat-square&logo=c&logoColor=white" alt="C"> <img src="https://img.shields.io/badge/C%2B%2B-24292f?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"></p>
+<p><img src="https://img.shields.io/badge/Kubernetes-30363d?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"> <img src="https://img.shields.io/badge/Docker-30363d?style=flat-square&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Helm-30363d?style=flat-square&logo=helm&logoColor=white" alt="Helm"> <img src="https://img.shields.io/badge/Jenkins-30363d?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins"></p>
+<p><img src="https://img.shields.io/badge/Prometheus-424a53?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"> <img src="https://img.shields.io/badge/Grafana-424a53?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"> <img src="https://img.shields.io/badge/PostgreSQL-424a53?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"></p>
 
 ---
 
