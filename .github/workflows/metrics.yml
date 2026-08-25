@@ -24,10 +24,11 @@ jobs:
           base: ""
           config_timezone: Europe/Paris
           extras_css: |
+            h2, h3 { color: #57606a }
             @media (prefers-color-scheme: dark) {
               [fill="#ebedf0"] { fill: #21262d }
               svg { color: #8b949e }
-              h2, h3 { color: #58a6ff }
+              h2, h3 { color: #adbac7 }
             }
           plugins_errors_fatal: yes
           plugin_isocalendar: yes
