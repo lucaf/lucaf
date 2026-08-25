@@ -89,7 +89,3 @@ Described in Ferrari A., **Filippin L.**, Buiatti M., Parise E. (2025),
 <p align="center">
   <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.calendar.svg" alt="Contribution calendar">
 </p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.activity.svg" alt="Recent activity">
-</p>
