@@ -13,14 +13,6 @@
 <br clear="all">
 <br>
 
-Most of my work has gone into distributed systems and backend services: job
-schedulers running across six operating systems, REST APIs on Kubernetes,
-cryptographic key storage on encryption hardware, a 250,000-line C port from
-Mac OS 9 to Mac OS X.
-
-Lately I build agentic tooling and MCP services for my own workflow — navigating
-large codebases, driving multi-step refactors, catching defects before review.
-
 ### Toolbox
 
 <table align="center">
