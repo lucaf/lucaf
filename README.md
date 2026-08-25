@@ -1,4 +1,6 @@
-<h1 align="center">Luca Filippin</h1>
+<p align="center">
+  <img src="assets/name.svg" alt="Luca Filippin" width="330">
+</p>
 
 <table width="100%">
 <tr>
