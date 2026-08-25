@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/head-image.png" alt="" width="100%">
+</p>
+
 <img align="right" src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/github-stats.svg" alt="GitHub statistics">
 
 <h3>Backend engineer</h3>
