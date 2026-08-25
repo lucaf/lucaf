@@ -1,12 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Morlet wavelet" width="100%">
-</p>
-
-<h1 align="center">Luca Filippin</h1>
-
-<p align="center">
-  <b>Backend engineer</b><br>
-  <sub>Twenty-five years in Go, Python, C and C++</sub>
+  <img src="assets/header.svg" alt="Luca Filippin — Backend engineer. Twenty-five years in Go, Python, C and C++" width="100%">
 </p>
 
 <p align="center">
