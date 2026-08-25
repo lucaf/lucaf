@@ -99,29 +99,29 @@ ICONS = {
 
 SANS = ("-apple-system,BlinkMacSystemFont,&apos;Segoe UI&apos;,"
         "Helvetica,Arial,&apos;Liberation Sans&apos;,sans-serif")
-W, PAD, TOP, RH = 330, 4, 58, 32
+W, PAD, TOP, RH = 300, 4, 48, 26
 H = TOP + (len(ROWS) - 1) * RH + 22
 
 body = []
 y = TOP
 for icon, label, value in ROWS:
-    body.append(f'<g class="ic" transform="translate({PAD},{y-12}) scale(0.95)">{ICONS[icon]}</g>')
-    body.append(f'<text class="l" x="{PAD+27}" y="{y}">{label}</text>')
+    body.append(f'<g class="ic" transform="translate({PAD},{y-11}) scale(0.8)">{ICONS[icon]}</g>')
+    body.append(f'<text class="l" x="{PAD+22}" y="{y}">{label}</text>')
     body.append(f'<text class="v" x="{W-PAD}" y="{y}" text-anchor="end">{value}</text>')
     y += RH
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub statistics for {USER}">
 <style>
-.t{{font-family:{SANS};font-size:18px;font-weight:700;fill:#2f81f7}}
-.l{{font-family:{SANS};font-size:16px;font-weight:600;fill:#1f2328}}
-.v{{font-family:{SANS};font-size:16px;fill:#57606a}}
+.t{{font-family:{SANS};font-size:14px;font-weight:700;fill:#2f81f7}}
+.l{{font-family:{SANS};font-size:13px;font-weight:600;fill:#1f2328}}
+.v{{font-family:{SANS};font-size:13px;fill:#57606a}}
 .ic{{fill:#57606a;stroke:#57606a}}
 @media (prefers-color-scheme:dark){{
 .t{{fill:#58a6ff}} .l{{fill:#e6edf3}} .v{{fill:#8b949e}}
 .ic{{fill:#8b949e;stroke:#8b949e}}
 }}
 </style>
-<text class="t" x="{PAD}" y="30">GitHub Statistics</text>
+<text class="t" x="{PAD}" y="24">GitHub Statistics</text>
 {"".join(body)}
 </svg>
 '''
