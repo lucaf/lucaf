@@ -79,12 +79,12 @@ def n(v):
     return f"{v:,}"
 
 ROWS = [
-    ("star",   "Stars",                          n(stars)),
-    ("fork",   "Forks",                          n(forks)),
-    ("commit", "All-time contributions",         n(total_contrib)),
-    ("diff",   "Lines of code changed",          n(lines)),
-    ("eye",    "Repository views (past two weeks)", n(views) if views_ok else "n/a"),
-    ("repo",   "Repositories with contributions", n(contributed)),
+    ("star",   "Stars",           n(stars)),
+    ("fork",   "Forks",           n(forks)),
+    ("commit", "Contributions",   n(total_contrib)),
+    ("diff",   "Lines changed",   n(lines)),
+    ("eye",    "Views (14 days)", n(views) if views_ok else "n/a"),
+    ("repo",   "Repos active in", n(contributed)),
 ]
 
 # --- icons (16x16 viewport, drawn at each row) ------------------------------
@@ -99,7 +99,7 @@ ICONS = {
 
 SANS = ("-apple-system,BlinkMacSystemFont,&apos;Segoe UI&apos;,"
         "Helvetica,Arial,&apos;Liberation Sans&apos;,sans-serif")
-W, PAD, TOP, RH = 420, 20, 62, 30
+W, PAD, TOP, RH = 300, 4, 54, 30
 H = TOP + (len(ROWS) - 1) * RH + 22
 
 body = []
@@ -112,16 +112,16 @@ for icon, label, value in ROWS:
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub statistics for {USER}">
 <style>
-.t{{font-family:{SANS};font-size:16px;font-weight:700;fill:#2f81f7}}
-.l{{font-family:{SANS};font-size:14px;font-weight:600;fill:#1f2328}}
-.v{{font-family:{SANS};font-size:14px;fill:#57606a}}
+.t{{font-family:{SANS};font-size:17px;font-weight:700;fill:#2f81f7}}
+.l{{font-family:{SANS};font-size:15px;font-weight:600;fill:#1f2328}}
+.v{{font-family:{SANS};font-size:15px;fill:#57606a}}
 .ic{{fill:#57606a;stroke:#57606a}}
 @media (prefers-color-scheme:dark){{
 .t{{fill:#58a6ff}} .l{{fill:#e6edf3}} .v{{fill:#8b949e}}
 .ic{{fill:#8b949e;stroke:#8b949e}}
 }}
 </style>
-<text class="t" x="{PAD}" y="34">Luca Filippin&apos;s GitHub Statistics</text>
+<text class="t" x="{PAD}" y="28">GitHub Statistics</text>
 {"".join(body)}
 </svg>
 '''
