@@ -14,6 +14,15 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: Check token is present
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::METRICS_TOKEN is EMPTY or not set on this repository"
+            exit 1
+          fi
+          echo "::notice::METRICS_TOKEN present - ${#TOKEN} chars, prefix ${TOKEN:0:4}"
       - name: Contribution calendar
         uses: lowlighter/metrics@latest
         with:
