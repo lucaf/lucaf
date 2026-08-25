@@ -47,6 +47,7 @@ jobs:
               svg { color: #8b949e }
               h2, h3 { color: #58a6ff }
             }
+          plugins_errors_fatal: yes
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 0
