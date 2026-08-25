@@ -45,6 +45,11 @@ jobs:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: python3 scripts/contributions.py lucaf > /tmp/contributions.svg
 
+      - name: Render GitHub statistics
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: python3 scripts/github_stats.py lucaf > /tmp/github-stats.svg
+
       - name: Publish to metrics branch
         run: |
           git config user.name  "github-actions[bot]"
@@ -52,6 +57,7 @@ jobs:
           git fetch origin metrics
           git checkout -B metrics origin/metrics
           cp /tmp/contributions.svg contributions.svg
-          git add contributions.svg
-          git diff --staged --quiet || git commit -m "Update contributions.svg [skip ci]"
+          cp /tmp/github-stats.svg  github-stats.svg
+          git add contributions.svg github-stats.svg
+          git diff --staged --quiet || git commit -m "Update generated charts [skip ci]"
           git push origin metrics

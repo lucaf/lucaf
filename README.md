@@ -108,3 +108,7 @@ time–frequency tradeoff is stated rather than assumed</li>
   <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.calendar.svg" alt="Contribution calendar" width="52%">
   <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/contributions.svg" alt="Contribution breakdown" width="42%">
 </p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/github-stats.svg" alt="GitHub statistics" width="42%">
+</p>
