@@ -50,6 +50,6 @@ jobs:
           plugins_errors_fatal: yes
           plugin_activity: yes
           plugin_activity_limit: 5
-          plugin_activity_days: 0
+          plugin_activity_days: 30
           plugin_activity_visibility: public
           plugin_activity_filter: push, pr, issue, release
