@@ -99,7 +99,7 @@ ICONS = {
 
 SANS = ("-apple-system,BlinkMacSystemFont,&apos;Segoe UI&apos;,"
         "Helvetica,Arial,&apos;Liberation Sans&apos;,sans-serif")
-W, PAD, TOP, RH = 300, 4, 48, 26
+W, PAD, RPAD, TOP, RH = 300, 4, 26, 48, 26
 H = TOP + (len(ROWS) - 1) * RH + 22
 
 body = []
@@ -107,7 +107,7 @@ y = TOP
 for icon, label, value in ROWS:
     body.append(f'<g class="ic" transform="translate({PAD},{y-11}) scale(0.8)">{ICONS[icon]}</g>')
     body.append(f'<text class="l" x="{PAD+22}" y="{y}">{label}</text>')
-    body.append(f'<text class="v" x="{W-PAD}" y="{y}" text-anchor="end">{value}</text>')
+    body.append(f'<text class="v" x="{W-RPAD}" y="{y}" text-anchor="end">{value}</text>')
     y += RH
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub statistics for {USER}">
