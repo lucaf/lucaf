@@ -39,56 +39,66 @@ large codebases, driving multi-step refactors, catching defects before review.
 
 ### Open source
 
-#### [NTPSync](https://github.com/lucaf/NTPSync) &nbsp;<sub>C · Python</sub>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-An NTP client: C library with a Python wrapper, Linux and macOS. It grew out of a
-client I wrote for an fNIRS acquisition system that needed several machines
-agreeing on time to within a millisecond.
+<h4><a href="https://github.com/lucaf/NTPSync">NTPSync</a> &nbsp;<sub>C · Python</sub></h4>
+<p>An NTP client: C library with a Python wrapper, Linux and macOS. It grew out of a
+client I wrote for an fNIRS acquisition system that needed several machines agreeing
+on time to within a millisecond.</p>
 
-#### [Structured decoding errors for mapstructure](https://github.com/mitchellh/mapstructure/pull/331) &nbsp;<sub>Go</sub>
+</td>
+<td width="50%" valign="top">
 
-A `Namespace` type that records the full field path where decoding failed, with
-source and destination values and error kinds, so a failure three levels into a
-nested config says where it happened.
-
+<h4><a href="https://github.com/mitchellh/mapstructure/pull/331">Structured decoding errors for mapstructure</a> &nbsp;<sub>Go</sub></h4>
+<p>A <code>Namespace</code> type that records the full field path where decoding failed,
+with source and destination values and error kinds, so a failure three levels into a
+nested config says where it happened.</p>
 <details>
 <summary>What it adds</summary>
-
-- `Namespace` and `NamespaceFld` — hierarchical error location by field name or tag
-- `LocalizedError` interface and `AsDecodingErrors()`
-- Error kinds, and a refactor of error handling across the codebase
-
-Nine commits. Still open when the project was archived in July 2024;
-[go-viper/mapstructure](https://github.com/go-viper/mapstructure) is the successor.
-
+<ul>
+<li><code>Namespace</code> and <code>NamespaceFld</code> — hierarchical error location by field name or tag</li>
+<li><code>LocalizedError</code> interface and <code>AsDecodingErrors()</code></li>
+<li>Error kinds, and a refactor of error handling across the codebase</li>
+</ul>
+<p>Nine commits. Still open when the project was archived in July 2024;
+<a href="https://github.com/go-viper/mapstructure">go-viper/mapstructure</a> is the successor.</p>
 </details>
 
-#### [career-ai-agent](https://github.com/lucaf/career-ai-agent) &nbsp;<sub>Python</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-A service that answers questions about a professional history, grounded in supplied
+<h4><a href="https://github.com/lucaf/career-ai-agent">career-ai-agent</a> &nbsp;<sub>Python</sub></h4>
+<p>A service that answers questions about a professional history, grounded in supplied
 documents. Pluggable LLM providers, streaming responses, remote profile storage so
-source material never enters the repository.
+source material never enters the repository.</p>
 
-#### [WTools](https://github.com/cogdevtools/WTools) &nbsp;<sub>MATLAB</sub>
+</td>
+<td width="50%" valign="top">
 
-A toolbox for time-frequency analysis of infant EEG. I rewrote it between October
-2023 and June 2024 — 116 commits merged as v2.0, fourteen merged pull requests
-since 2023.
-
+<h4><a href="https://github.com/cogdevtools/WTools">WTools</a> &nbsp;<sub>MATLAB</sub></h4>
+<p>A toolbox for time-frequency analysis of infant EEG. I rewrote it between October
+2023 and June 2024 — 116 commits merged as v2.0, fourteen merged pull requests since 2023.</p>
 <details>
 <summary>What the rewrite covered</summary>
-
-- The logging, project and utility core
-- Channel location and spline handling, with Cz restore for EGI layouts
-- Precise time-domain computation for Morlet wavelets, with FWHM reported so the
-  time–frequency tradeoff is stated rather than assumed
-- Baseline normalisation, dB plots, colorbar ranges
-- Export of CWT real and imaginary components; single-header TSV output
-
+<ul>
+<li>The logging, project and utility core</li>
+<li>Channel location and spline handling, with Cz restore for EGI layouts</li>
+<li>Precise time-domain computation for Morlet wavelets, with FWHM reported so the
+time–frequency tradeoff is stated rather than assumed</li>
+<li>Baseline normalisation, dB plots, colorbar ranges</li>
+<li>Export of CWT real and imaginary components; single-header TSV output</li>
+</ul>
 </details>
+<p>Described in Ferrari A., <b>Filippin L.</b>, Buiatti M., Parise E. (2025),
+<i>WTools: a MATLAB-based toolbox for time-frequency analysis of infant data.</i></p>
 
-Described in Ferrari A., **Filippin L.**, Buiatti M., Parise E. (2025),
-*WTools: a MATLAB-based toolbox for time-frequency analysis of infant data.*
+</td>
+</tr>
+</table>
 
 ---
 
