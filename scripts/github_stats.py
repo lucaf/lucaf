@@ -14,14 +14,14 @@ HDRS  = {"Authorization": f"bearer {TOKEN}",
          "Accept": "application/vnd.github+json",
          "User-Agent": "profile-readme"}
 
-def rest(path, retries=12):
+def rest(path, retries=8):
     """GET with 202 handling: GitHub computes contributor stats asynchronously."""
     for attempt in range(retries):
         req = urllib.request.Request("https://api.github.com" + path, headers=HDRS)
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 if r.status == 202:
-                    time.sleep(min(2 + attempt * 2, 15))
+                    time.sleep(min(2 + attempt * 2, 8))
                     continue
                 return r.status, json.load(r)
         except urllib.error.HTTPError as e:
@@ -99,7 +99,7 @@ ICONS = {
 
 SANS = ("-apple-system,BlinkMacSystemFont,&apos;Segoe UI&apos;,"
         "Helvetica,Arial,&apos;Liberation Sans&apos;,sans-serif")
-W, PAD, TOP, RH = 300, 4, 54, 30
+W, PAD, TOP, RH = 330, 4, 58, 32
 H = TOP + (len(ROWS) - 1) * RH + 22
 
 body = []
@@ -112,16 +112,16 @@ for icon, label, value in ROWS:
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub statistics for {USER}">
 <style>
-.t{{font-family:{SANS};font-size:17px;font-weight:700;fill:#2f81f7}}
-.l{{font-family:{SANS};font-size:15px;font-weight:600;fill:#1f2328}}
-.v{{font-family:{SANS};font-size:15px;fill:#57606a}}
+.t{{font-family:{SANS};font-size:18px;font-weight:700;fill:#2f81f7}}
+.l{{font-family:{SANS};font-size:16px;font-weight:600;fill:#1f2328}}
+.v{{font-family:{SANS};font-size:16px;fill:#57606a}}
 .ic{{fill:#57606a;stroke:#57606a}}
 @media (prefers-color-scheme:dark){{
 .t{{fill:#58a6ff}} .l{{fill:#e6edf3}} .v{{fill:#8b949e}}
 .ic{{fill:#8b949e;stroke:#8b949e}}
 }}
 </style>
-<text class="t" x="{PAD}" y="28">GitHub Statistics</text>
+<text class="t" x="{PAD}" y="30">GitHub Statistics</text>
 {"".join(body)}
 </svg>
 '''
