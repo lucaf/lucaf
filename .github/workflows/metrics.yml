@@ -2,7 +2,7 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "0 5 * * 1"
   workflow_dispatch:
   push:
     branches: [main]
@@ -20,6 +20,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: lucaf
           filename: metrics.calendar.svg
+          committer_branch: metrics
           base: ""
           config_timezone: Europe/Paris
           extras_css: |
@@ -37,6 +38,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: lucaf
           filename: metrics.activity.svg
+          committer_branch: metrics
           base: ""
           config_timezone: Europe/Paris
           extras_css: |
