@@ -39,7 +39,6 @@ large codebases, driving multi-step refactors, catching defects before review.
 </tr>
 </table>
 
----
 
 ### Open source
 
@@ -104,7 +103,6 @@ time–frequency tradeoff is stated rather than assumed</li>
 </tr>
 </table>
 
----
 
 ### Activity
 
