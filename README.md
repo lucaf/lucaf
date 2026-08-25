@@ -84,5 +84,6 @@ Described in Ferrari A., **Filippin L.**, Buiatti M., Parise E. (2025),
 ### Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.calendar.svg" alt="Contribution calendar">
+  <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.calendar.svg" alt="Contribution calendar" width="52%">
+  <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/contributions.svg" alt="Contribution breakdown" width="42%">
 </p>
