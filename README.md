@@ -75,7 +75,7 @@ source material never enters the repository.</p>
 </td>
 <td width="50%" valign="top">
 
-<h4><a href="https://github.com/cogdevtools/WTools">WTools</a> &nbsp;<sub>MATLAB</sub></h4>
+<h4><a href="https://github.com/lucaf/WTools/tree/v2.0">WTools v2.0</a> &nbsp;<sub>MATLAB</sub></h4>
 <p>A toolbox for time-frequency analysis of infant EEG. I rewrote it between October
 2023 and June 2024 — 116 commits merged as v2.0, fourteen merged pull requests since 2023.</p>
 <details>
@@ -103,4 +103,3 @@ time–frequency tradeoff is stated rather than assumed</li>
   <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/metrics.calendar.svg" alt="Contribution calendar" width="52%">
   <img src="https://raw.githubusercontent.com/lucaf/lucaf/metrics/contributions.svg" alt="Contribution breakdown" width="42%">
 </p>
-
