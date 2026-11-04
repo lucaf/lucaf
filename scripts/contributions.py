@@ -68,12 +68,12 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
 .ax{{stroke:#2f7d6f;stroke-width:1.5}}
 .pt{{fill:#2f7d6f}}
 .area{{fill:#2f7d6f;fill-opacity:.35;stroke:#2f7d6f;stroke-width:1.5}}
-.v{{font-family:{SANS};font-size:17px;font-weight:600;fill:#1f2328}}
+.v{{font-family:{SANS};font-size:17px;font-weight:600;fill:#737b86}}
 .k{{font-family:{SANS};font-size:14px;fill:#57606a}}
 @media (prefers-color-scheme:dark){{
 .ax{{stroke:#3fb950}} .pt{{fill:#3fb950}}
 .area{{fill:#3fb950;fill-opacity:.3;stroke:#3fb950}}
-.v{{fill:#e6edf3}} .k{{fill:#8b949e}}
+.k{{fill:#8b949e}}
 }}
 </style>
 {"".join(axis_lines)}

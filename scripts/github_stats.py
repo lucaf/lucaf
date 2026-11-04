@@ -113,13 +113,9 @@ for icon, label, value in ROWS:
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub statistics for {USER}">
 <style>
 .t{{font-family:{SANS};font-size:14px;font-weight:700;fill:#2f81f7}}
-.l{{font-family:{SANS};font-size:13px;font-weight:600;fill:#1f2328}}
-.v{{font-family:{SANS};font-size:13px;fill:#57606a}}
-.ic{{fill:#57606a;stroke:#57606a}}
-@media (prefers-color-scheme:dark){{
-.t{{fill:#58a6ff}} .l{{fill:#e6edf3}} .v{{fill:#8b949e}}
-.ic{{fill:#8b949e;stroke:#8b949e}}
-}}
+.l{{font-family:{SANS};font-size:13px;font-weight:600;fill:#737b86}}
+.v{{font-family:{SANS};font-size:13px;fill:#737b86}}
+.ic{{fill:#737b86;stroke:#737b86}}
 </style>
 <text class="t" x="{PAD}" y="24">GitHub Statistics</text>
 {"".join(body)}
