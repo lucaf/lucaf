@@ -94,6 +94,18 @@ time–frequency tradeoff is stated rather than assumed</li>
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+<h4><a href="https://github.com/lucaf/heiry">heiry</a> &nbsp;<sub>Go</sub></h4>
+<p>Single inheritance with overridable methods for Go. Ancestors are embedded by value;
+virtual calls reach the most-derived implementation and parent calls the one below it,
+as ordinary typed method calls. An optional generator, heirygen, writes the declarations.</p>
+
+</td>
+<td width="50%" valign="top">
+</td>
+</tr>
 </table>
 
 
